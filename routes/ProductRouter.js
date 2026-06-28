@@ -7,7 +7,7 @@ const {
     getSingleRecord,
     updateRecord,
     deleteRecord
-} = require("../controllers/productController")
+} = require("../controllers/ProductController")
 
 ProductRouter.post("", authPublic, productUploader.array("pic"), createRecord)
 ProductRouter.get("", authPublic, getRecord)
